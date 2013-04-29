@@ -1,0 +1,22 @@
+Florea Alexandru - Ionut
+313CA
+Tema2 - Structuri de Date
+Browser History
+
+	Programul simuleaza istoricul unui browser. Implementarea am facut-o
+folosind structura de date 'Deque'. Implementarea deque-ului este una hibrida,
+folosind atat liste dublu inlantuite cat si vectori. Fiecare informatie a
+unui nod din lista retine o structura 'Node'; acesta este formata dintr-o 
+structura alcatuita dintr-un vector de stringuri si un intreg (reprezentand
+URL-ul si ziua), si un intreg reprezentand numarul de elemente din vector.
+
+	Struuctura de date Deque permite adaugarea elementelor atat pe la coada cat
+si prin cap. Implementarea hibrida o face eficienta, accesarea unei intari 
+facandu-se rapid. Adaugarea in capul structurii se face intotdeuan pe pozitia 0
+din vector; daca vectorul este plin se creaza un nou nod la inceputul listei si
+se adauga la inceputul listei. Adaugarea la coada structurii se face pe pozitia 
+imediat urmatoare disponibila din vector; daca vectorul este plin se creaza un 
+nou nod la sfarsitul listei si se adauga pe pozitia 0 a vectorului. Stergerea 
+este operatia inversa adaugarii, vectorii care devin goi duca la stergerea 
+nodului din lista.
+
